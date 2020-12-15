@@ -1,5 +1,8 @@
 name: Build Next.js web application
-on: push
+on:
+  release:
+    types:
+      - created
 jobs:
   build-container:
     name: Build container
